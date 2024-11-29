@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/Commande de produit" method="post">
+     <h1> Commande de produit </h1>
+   
+       <br>
+
+        <fieldset>
+            <legend><strong> Informations du Client </strong></legend>
+
+            <div>
+                <label for="name"> Nom :</label>
+                <input type="text" id="name" name="user_name" minlength="2" required>
+            </div>
+        </br>
+             <div>
+                <label for="prenom"> Prénom :</label>
+                <input type="text" id="prenom" name="user_prenom" minlength="2" required>
+             </div>
+        </br>  
+        <div>
+            <label for="email"> Email :</label>
+            <input type="email" id="email" name="user_email"  required>
+         </div>
+    </br>    
+    <div>
+        <label for="tel"> Téléphone :</label>
+        <input type="tel" id="tel" name="tel"  pattern="[0-9]{2}[ -][0-9]{2}[ -][0-9]{2}[ -][0-9]{2}" requierd/>
+    </div>
+</br>    
+   
+<div>
+    <label for="adresse"> Adresse de livraison :</label>
+    <input type="text" id="adresse" name="user_adresse" required>
+ </div>
+</br>    
+
+<div>
+    <label for="livraison"> Mode de livraison :</label>
+    <select id="livraison" name="livraison" required>  
+         
+         <option value="">Sélectionnez</option>
+          <option value="standard">Standard</option>
+          <option value="express">Express</option>
+
+          </select> 
+ </div>
+</br>    
+    
+    </fieldset>
+
+</br>
+        <fieldset>
+              
+            <legend><strong> Détails de la Commande</strong></legend>
+            <div>
+                <label for="produit"> Produit :</label>
+                <select id="produit" name="produit" required>  
+                     
+                     <option value="">Sélectionnez</option>
+                      <option value="Casque Bluetooth">Casque Bluetooth</option>
+                      <option value="Clavier Mécanique">Clavier Mécanique</option>
+                      <option value="Souris de Jeu">Souris de Jeu</option>
+            
+                      </select> 
+             </div>
+            </br>    
+        
+            <div>
+                <label for="quantité"> Quantité :</label>
+                <input type="number" id="quantité" name="quantité" value="1" min="1" max="5">
+             </div>
+            </br> 
+
+
+            <div>
+                <label for="couleur"> Couleur :</label>
+                <select id="couleur" name="couleur" required>  
+                     
+                     <option value="">Sélectionnez</option>
+                      <option value="Noir">Noir</option>
+                      <option value="Blanc">Blanc</option>
+                      <option value="Rouge">Rouge</option>
+            
+                      </select> 
+             </div>
+            </br>    
+        
+            <p> Options supplémentaires :</p>
+
+           <input type="checkbox" id="cadeau" name="cadeau">
+           <label for="cadeau"> Emballage cadeau </label>
+            </br>
+
+           <input type="checkbox" id="garantie" name="garantie">
+           <label for="garantie"> Extension de garantie </label>
+
+        </br>
+           </br>
+           <label for="date">Date de livraison</label>
+           <input type="date" id="date" name="date" min="2024-11-29" max="">
+
+
+
+
+        </fieldset>
+
+    </br>
+
+        <fieldset>
+            <legend><strong> Paiement </strong></legend>
+
+            <br>
+            <div>
+                
+                    <input type="radio" id="Carte de crédit" name="paiement" value="Carte de crédit" />
+                    <label for="Carte de crédit">Carte de crédit</label>
+              
+                    <input type="radio" id="Paypal" name="paiement" value="Paypal" />
+                    <label for="Paypal">Paypal</label>
+              
+                    <input type="radio" id="Virement" name="paiement" value="Virement" />
+                    <label for="Virement bancaire">Virement bancaire</label>
+                  </div>
+                
+                
+              
+            
+            </br>    
+        
+              
+               
+
+            <input type="checkbox" id="condition" name="conditions" required>
+            <label for="conditions"> J'accepte les conditions générales </label>
+ 
+
+
+        </fieldset>
+      
+    </br>
+         
+          <button type="submit"> Commander</button>
+          <button type="reset"> Rénitialiser </button>
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+     </form>
+
+</body>
+</html>
